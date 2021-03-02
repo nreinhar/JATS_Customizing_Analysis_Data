@@ -5,10 +5,12 @@
     JATS_Customizing_Analysis.
   Specify base-dir-uri when invoking pipeline.xsl if you need relative paths resolved
   wrt a different directory.
+  If you write the output to ../JATS_Customizing_Analysis_Data/all.xhtml, you need to 
+  specify base-dir-uri=file:/$(cygpath -ma .) on Cygwin, where . is JATS_Customizing_Analysis
   -->
   <rng uri="schema/JATS/1.3d2/Blue/rng/JATS-journalpublishing1-3d2-mathml3.rng" name="Blue"/>
   <rng uri="schema/JATS/1.3d2/Green/rng/JATS-archivearticle1-3d2-mathml3.rng" name="Green"/>
-  <rng uri="schema/JATS/1.3d2/Green/rng/JATS-archive-oasis-article1-3d2-mathml3.rng" name="Green1.3d2_OASIS"/>
+  <rng uri="schema/JATS/1.3d2/Green/rng/JATS-archive-oasis-article1-3d2-mathml3.rng" name="Green_OASIS"/>
   <rng uri="schema/JATS/1.3d2/Pumpkin/rng/JATS-articleauthoring1-3d2-mathml3.rng" name="Pumpkin"/>
   <cache-collection uri="../JATS_Customizing_Analysis_Data/all/" name="all"/>
 </customization-stats>
